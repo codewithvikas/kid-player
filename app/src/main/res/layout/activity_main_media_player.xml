@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vikas_jha.mymediaplayer.MainMediaPlayerActivity">
+
+   <!-- <VideoView
+        android:id="@+id/myVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>-->
+    <!--<SurfaceView
+        android:id="@+id/vidSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/parentRelative"
+        android:visibility="invisible"
+        android:background="#000000">
+            <VideoView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/videoSurfaceView"
+                android:tag="videoView"/>
+
+        </FrameLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/PhoneVideoList"></ListView>
+
+
+</RelativeLayout>
